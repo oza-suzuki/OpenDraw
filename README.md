@@ -12,7 +12,7 @@ https://drive.google.com/file/d/1ObaDVHlClEogT9C2qWnwWZY9TgZfuniL/view?usp=shari
 
 To see this project visit
 
-https://github.com/oza-suzuki/FrontendTha-Devsnest/tree/main/Hackathon2
+https://oza-suzuki.github.io/OpenDraw/
 
 
 
