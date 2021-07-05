@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mr.WhiteBoard</title>
+</head>
+
+<body>
+    <div class="contentWrapper" id="contentWrapper">
+        <h3 id="heading">OPENDRAW</h3>
+        <!-- <img class="img" src="logo.png" alt="logo"> -->
+        <nav class="nav nav1" id="second_heading">
+            <ul class="unlist">
+                <li class="dropdown">OPEN |
+                    <div class="dropdownContent" class="dropdwn">
+                        <button id="blank">New Canvas</button><br>
+                        <input type="file" id="imgFile">
+                    </div>
+                </li>
+                <li class="dropdown">Canvas Size |
+                    <div class="dropdownContent">
+                        <label>Width: <input type="number" id="myWidth" value="112" max="112" min="7"></label><br>
+                        <label>Height: <input type="number" id="myHeight" value="80" max="80" min="5"><Label>
+                    </div>
+                </li>
+                <li> <li>Tools - </li>
+                    <li> Basics:
+                    <select id="myTool">
+                        <option value="pencil">Pencil</option>
+                        <option value="eraser">Eraser</option>
+                        <option value="line">Line</option>
+                        <option value="circle">Circle</option>
+                        <option value="rectangle">Rectangle</option>
+                        <option value="square">Square</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                  </li>
+                </li>
+                
+                <li> Theme:
+                    <select id="myTheme">
+                        <option value="light">Light</option>
+                        <option value="dark" selected="selected">Dark</option>
+                        <option value="solarized-dark">Solarized</option>
+                        <option value="red">Blood-red</option>
+                    </select>
+                </li>
+                <li class="dropdown">
+                    Tool Size
+                    <input id="myLineWidth" type="range" min="1" max="20" value="1" step="1"> |
+                </li>
+                <li class="dropdown">Color
+                    <input type="color" id="myColor">
+                    |
+                </li>
+
+                <li class="dropdown" class="opacity">Opacity <input id="myOpacity" type="range" min="0" max="1" step="0.1" value="1">
+
+            </ul>
+        </nav>
+        <div id="canvasWrapper">
+            <div id="canvasBackground">
+                <canvas id="myCanvas"></canvas>
+            </div>
+        </div>
+        <nav class="nav nav2" id="footer">
+            <button id="newLayer">New Layer</button>
+            <button id="clear">Clear All</button>
+            <div class="mouse_pointer">
+              <h3>
+                X: <span id="x-value"></span>
+                , Y: <span id="y-value"></span>
+                </h3>
+            </div>
+        </nav>
+    </div>
+
+    <h3 id="preview">My Layers</h3>
+
+    <div id="previewWrapper">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
